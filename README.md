@@ -3,9 +3,13 @@
 ## reference 
 Carpenter, G. A(1992), Fuzzy ARTMAP: A neural network architecture for incremental supervised learning of analog multidimensional maps, IEEE Transactions on Neural Networks, vol 3(5)
 
-##
-imutils
-numpy
+## requirements
+~~~
+- imutils
+- numpy
+- skelarn
+~~~
+
 
 
 ## video link
