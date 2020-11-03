@@ -22,15 +22,20 @@ https://www.youtube.com/watch?v=2uepMaYM3v8&t=3s
 python extract_embeddings.py --dataset ./dataset --embeddings ./output/embeddings.pickle --detector ./face_detection_model --embedding-model openface_nn4.small2.v1.t7
 ~~~
 --dataset : dataset directory
---embeddings : directory to save embbeddings
+--embeddings : directory to save embeddings
 --detector : face detection model
 --embedding-model : feature extraction model
 ### run artmap for face classification
 ~~~
-python train_fuzzy.py --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7 --embeddings ./output/embeddings.pickle --recognizer ./output/recognizer.pickle --le ./output/le.pickle
+python train_fuzzy.py --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7 --embeddings ./output/embeddings.pickle --le ./output/le.pickle
 ~~~
-## ARTMAP.py
-algorithms for ART + ARTMAP
+--le : label of the embeddings
+--embeddings : embeddings
+--detector : face detection model
+--embedding-model : feature extraction model
+
+### press 'r' while running train_fuzzy.py
+you can register your own face in a real-time
 
 ## reference 
 Carpenter, G. A(1992), Fuzzy ARTMAP: A neural network architecture for incremental supervised learning of analog multidimensional maps, IEEE Transactions on Neural Networks, vol 3(5)
