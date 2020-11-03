@@ -54,8 +54,6 @@ class Thread(threading.Thread):
 ap = argparse.ArgumentParser()
 ap.add_argument("-e", "--embeddings", required=True,
     help="path to serialized db of facial embeddings")
-ap.add_argument("-r", "--recognizer", required=True,
-    help="path to output model trained to recognize faces")
 ap.add_argument("-l", "--le", required=True,
     help="path to output label encoder")
 
