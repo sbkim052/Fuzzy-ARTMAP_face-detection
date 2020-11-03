@@ -66,7 +66,6 @@ class Fuzzy_Artmap():
             fuz_min = self.fuzzy_min(I,self.weight[T_max])
             resonance = sum(fuz_min)/self.M >=self.vig
             if resonance:
-                print(sum(fuz_min)/self.M)
                 #self.template_learning(T_max,fuz_min)
                 return self.category[T_max], None
             else:
@@ -81,7 +80,7 @@ class Fuzzy_Artmap():
         self.category = np.concatenate((self.category,[self.new_cnt]))
         
         self.new_cnt+=1
-        print(self.category)
+        
         
         
     
@@ -120,7 +119,7 @@ class Fuzzy_Artmap():
                     T_list[T_max]=0
             
             self.vig=0.75
-        print("catego: ",self.category)
+        
     
     def training_register(self,I):
         #calculate T
@@ -150,7 +149,7 @@ class Fuzzy_Artmap():
                     T_list[T_max]=0
             
         
-        print("category: ",self.category)
+   
         
                 
             
@@ -190,8 +189,7 @@ class Fuzzy_Artmap():
         if self.register_flag==1:
             self.temp_list[0]=I
             self.register_flag=2
-        else:
-            print(self.temp_index)
+        else:           
             self.temp_list=np.concatenate((self.temp_list,[I]),axis=0)
         
         self.temp_index+=1
