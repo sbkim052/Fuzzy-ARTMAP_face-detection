@@ -11,9 +11,9 @@ computation based on fuzzy operation and high accuracy of classification with a 
 - skelarn
 ~~~
 
-## video link
-https://www.youtube.com/watch?v=5-aRup4vgIQ&feature=youtu.be
-https://www.youtube.com/watch?v=2uepMaYM3v8&t=3s
+## video links
+- https://www.youtube.com/watch?v=5-aRup4vgIQ&feature=youtu.be
+- https://www.youtube.com/watch?v=2uepMaYM3v8&t=3s
 
 ## how to run
 ### place your datasets in ./dataset
@@ -21,18 +21,18 @@ https://www.youtube.com/watch?v=2uepMaYM3v8&t=3s
 ~~~
 python extract_embeddings.py --dataset ./dataset --embeddings ./output/embeddings.pickle --detector ./face_detection_model --embedding-model openface_nn4.small2.v1.t7
 ~~~
---dataset : dataset directory
---embeddings : directory to save embeddings
---detector : face detection model
---embedding-model : feature extraction model
+- --dataset : dataset directory
+- --embeddings : directory to save embeddings
+- --detector : face detection model
+- --embedding-model : feature extraction model
 ### run artmap for face classification
 ~~~
 python train_fuzzy.py --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7 --embeddings ./output/embeddings.pickle --le ./output/le.pickle
 ~~~
---le : label of the embeddings
---embeddings : embeddings
---detector : face detection model
---embedding-model : feature extraction model
+- --le : label of the embeddings
+- --embeddings : embeddings
+- --detector : face detection model
+- --embedding-model : feature extraction model
 
 ### press 'r' while running train_fuzzy.py
 you can register your own face in a real-time
