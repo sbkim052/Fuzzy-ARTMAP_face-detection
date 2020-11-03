@@ -38,5 +38,5 @@ python train_fuzzy.py --detector face_detection_model --embedding-model openface
 you can register your own face in a real-time
 
 ## reference 
-Carpenter, G. A(1992), Fuzzy ARTMAP: A neural network architecture for incremental supervised learning of analog multidimensional maps, IEEE Transactions on Neural Networks, vol 3(5)
-Carpenter, G.A., Grossberg, S., and Rosen, D.B. (1991). Fuzzy art: Fast stable learning and categorization of analog patterns by an adaptive resonance system. Neural networks, 4(6), 759–771.
+- Carpenter, G. A(1992), Fuzzy ARTMAP: A neural network architecture for incremental supervised learning of analog multidimensional maps, IEEE Transactions on Neural Networks, vol 3(5)
+- Carpenter, G.A., Grossberg, S., and Rosen, D.B. (1991). Fuzzy art: Fast stable learning and categorization of analog patterns by an adaptive resonance system. Neural networks, 4(6), 759–771.
