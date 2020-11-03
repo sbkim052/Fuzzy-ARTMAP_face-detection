@@ -1,6 +1,7 @@
 # Real-time Face Registration and Classification System using Fuzzy ARTMAP
 In this paper, we propose a real-time face registration and classification system using Fuzzy adaptive resonance theory (ART) based map architecture (Fuzzy ARTMAP). Facial recognition can be divided into face detection and face classification. Firstly, face detection was implemented by a pretrained Caffe Model using OpenCV’s dnn module. Secondly, with the detected faces, face classification was completed using Fuzzy ARTMAP. The advantages Fuzzy ARTMAP has are the capability of fast
 computation based on fuzzy operation and high accuracy of classification with a small amount of data. The proposed algorithm enables not only fast face classification but also fast face registration with only a small amount of data in real-time. Experimental results showed that the system was able to generate new categories in real-time and performed high accuracy of facial recognition.
+![Screen Shot 2020-11-03 at 3 23 34 PM](https://user-images.githubusercontent.com/59387731/97955161-e7974200-1de8-11eb-986a-9023fc3d7e3d.png)
 
 ### This is an official implementation of https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09410561
 
